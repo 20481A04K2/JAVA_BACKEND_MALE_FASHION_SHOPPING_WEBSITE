@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#" onclick="loadContent('contacts')">Contacts</a></li>
+        <li><a href="#" onclick="loadContent('dashboard')">Dashboard</a></li>
+        <li><a href="#" onclick="loadContent('profile')">Profile</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome</h1>
+      <p>Click on a menu item to load content.</p>
+      <div id="dynamic-content"></div>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>

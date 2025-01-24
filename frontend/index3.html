@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Username {
+            color: white;
+            background-color: blue;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+       
+    </style>
+</head>
+<body>
+    NAME: <input type="text" id="Username"/><br>
+    PASSWORD: <input type="password" id="password"/><br>
+    RE ENTER PASSWORD: <input type="password" id="re-enter password"/><br>
+    SUBMIT1: <button name="submit" onclick="sec()">Submit</button><br>
+    SUBMIT2: <button id="btn">Submit</button>
+    <script>
+        function sec(){
+            const username=document.getElementById("Username").value
+            const password=document.getElementById("password").value
+            const repassword=document.getElementById("re-enter password").value
+            if(password===repassword){
+                document.body.innerHTML=`<h1>Registration successful for ${username} </h1>`
+            }else{
+                document.body.innerHTML=`<h1>Registration failed for ${username} </h1>`
+            }
+        }
+        document.getElementById("btn").addEventListener('click',
+        function(){
+            const username=document.getElementById("Username").value
+            const password=document.getElementById("password").value
+            const repassword=document.getElementById("re-enter password").value
+            if(password===repassword){
+                document.body.innerHTML=`<h1>Registration successful for ${username} </h1>`
+            }else{
+                document.body.innerHTML=`<h1>Registration failed for ${username} </h1>`
+            }
+        }
+        )
+    </script>
+</body>
+</html>
